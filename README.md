@@ -1,13 +1,22 @@
-# SEAWAYS THEME DOCUMENTATION VERSION: 0.5
+# SEAWAYS THEME DOCUMENTATION VERSION: 1.0
 
 # HOW TO SIGN INTO THE BACKEND
 
-1. Navigate to >INPUT EMAIL HERE<
+1. Navigate to >INPUT URL HERE<
 2. Input login info
 
 # HOME PAGE
 
 ## HOW TO CHANGE HEADER IMAGE
+
+1. On left side panel click "Appearances > Header"
+2. Select "Header Image"
+3. Select "Add New Image"
+4. Select the image you wish to be displayed
+5. Once you have chosen the image click "Select and Crop"
+6. You may crop the mage or skip cropping the image.
+7. Once you have finished click "Publsh" on the left side menu.
+   > NOTE: The image should be about 2560 X 950 to look correct on all monitors.
 
 ## CHANGE ABOUT SECTION PICTURE
 
