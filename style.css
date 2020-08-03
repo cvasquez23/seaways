@@ -1,0 +1,507 @@
+/*!
+Theme Name: Seaways
+URI: https://
+Author: Chris Vasquez
+Author URI: chrisvasquez.dev
+Description: The theme for Seaways
+Version: 1.0
+License: GNU License 
+URI: 
+Text Domain: Seaways
+Tags: 
+*/
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #000; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: '';
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*
+   * Collapse
+   */
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--collapse .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .hamburger--collapse .hamburger-inner::before {
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+  width: 100vw;
+  position: relative; }
+  html h2,
+  body h2 {
+    padding-top: 5rem; }
+  html .cookies-not-set nav,
+  body .cookies-not-set nav {
+    margin-top: 60px; }
+
+.header,
+.content-area {
+  margin-top: 75px; }
+
+@media (max-width: 767px) {
+  .text-xs-center {
+    text-align: center; } }
+
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem; }
+  body h2,
+  html h2 {
+    font-size: 40px; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5 {
+    font-family: "Open Sans", sans-serif; }
+  body span,
+  html span {
+    font-family: "Raleway", sans-serif; }
+  @media only screen and (min-width: 1200px) {
+    body,
+    html {
+      font-size: 1rem; } }
+
+.top-alert a {
+  color: #ffffff; }
+
+.cn-more-info {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem; }
+
+.home p.lead {
+  font-style: italic; }
+
+.home .card span {
+  font-weight: 700; }
+
+.home .card i {
+  font-size: 3rem; }
+
+.home .about a:hover {
+  text-decoration: none; }
+
+.home .book-now {
+  color: #071833; }
+
+.page-template-page-rooms a {
+  text-decoration: none;
+  color: #ffffff; }
+  .page-template-page-rooms a:hover {
+    color: #ffffff; }
+
+.page-template-page-rooms .contact-email {
+  color: #071833; }
+  .page-template-page-rooms .contact-email:hover {
+    color: #071833; }
+
+.page-template-page-rooms .book-now {
+  color: #ffffff; }
+  .page-template-page-rooms .book-now:hover {
+    color: #ffffff; }
+
+.page-template-page-room .room-title i {
+  font-size: 1.75rem; }
+
+.page-template-page-room a.back-icon {
+  color: #000000; }
+
+.page-template-page-room i {
+  font-size: 1.5rem; }
+
+.page-template-page-room span.policies {
+  font-size: 0.9rem;
+  font-weight: 700; }
+
+.page-template-page-room span.divider {
+  font-size: 2rem; }
+
+footer {
+  background: #071833;
+  color: #ffffff; }
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px; }
+    footer a:hover {
+      color: #ffffff;
+      text-decoration: none; }
+
+.fa-up {
+  padding-top: 2.5rem; }
+
+.social-footer i {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.5rem; }
+
+.credit p {
+  font-size: 12px; }
+
+.credit a {
+  font-size: 12px; }
+
+.top-alert {
+  height: 40px;
+  background-color: #071833;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.btn,
+.btn-primary,
+.btn-secondary {
+  background-color: #071833;
+  border-color: #071833; }
+  .btn:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    background-color: #071833;
+    border-color: #071833; }
+  .btn:focus,
+  .btn-primary:focus,
+  .btn-secondary:focus {
+    box-shadow: none; }
+  .btn:active,
+  .btn-primary:active,
+  .btn-secondary:active {
+    background-color: #071833;
+    border-color: #071833; }
+  .btn:not(:disabled), .btn:not(:disabled):active,
+  .btn-primary:not(:disabled),
+  .btn-primary:not(:disabled):active,
+  .btn-secondary:not(:disabled),
+  .btn-secondary:not(:disabled):active {
+    background-color: #071833;
+    border-color: #071833; }
+  .btn:focus,
+  .btn-primary:focus,
+  .btn-secondary:focus {
+    box-shadow: none; }
+
+.home .card {
+  border: none;
+  background-color: #f5f5f5;
+  float: none; }
+  @media only screen and (min-width: 576px) {
+    .home .card {
+      width: 18rem; } }
+
+.home .testimony .card {
+  width: fit-content;
+  height: 15rem; }
+
+.page-template-page-rooms .card {
+  border: none;
+  background-color: #f5f5f5;
+  width: 860px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.page-template-page-rooms .card-text span {
+  font-size: 2rem; }
+
+.page-template-page-rooms .amenities-icon {
+  display: flex; }
+  .page-template-page-rooms .amenities-icon i {
+    font-size: 1.5rem;
+    padding-right: 1rem; }
+    .page-template-page-rooms .amenities-icon i span {
+      font-size: 1rem; }
+
+.page-template-page-room .card {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  float: none; }
+  .page-template-page-room .card .card-body {
+    padding: 0; }
+
+.carousel {
+  width: -webkit-fill-available; }
+  .carousel img {
+    width: -webkit-fill-available;
+    border-radius: 0.25rem; }
+
+@media only screen and (max-width: 992px) {
+  #slidingNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow-y: hidden; } }
+
+.hamburger,
+.hamburger--collapse {
+  z-index: 2; }
+
+.ofh {
+  overflow-y: hidden; }
+
+nav {
+  box-shadow: 0px 11px 12px -3px rgba(0, 0, 0, 0.42); }
+  @media only screen and (min-width: 992px) {
+    nav {
+      height: 80px; } }
+  nav .book-now {
+    border: 2px #071833 solid; }
+    nav .book-now:hover {
+      background-color: #071833; }
+      nav .book-now:hover .nav-link {
+        color: #ffffff !important; }
+
+.navbar-nav li {
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media only screen and (max-width: 600px) {
+    .navbar-nav li {
+      font-size: 15px; } }
+
+.social-media i {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  @media only screen and (max-width: 576px) {
+    .social-media i {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem; } }
+
+.social-media a {
+  text-decoration: none;
+  color: black; }
+
+.bg-light {
+  background-color: #ffffff !important; }
+
+.wpcf7-mail-sent-ok {
+  border: 2px solid #071833; }
+
+.wpcf7-form {
+  line-height: 0.5rem; }
+  .wpcf7-form .form-group label {
+    margin-bottom: 0; }
+  .wpcf7-form .form-buttons {
+    display: flex;
+    padding-bottom: 1rem; }
+
+.cookie-notice-container {
+  background-color: #071833; }
+  .cookie-notice-container #cn-accept-cookie {
+    display: none; }
+  .cookie-notice-container .cn-more-info {
+    background-color: #071833; }
+
+.modula .modula-items .modula-item a {
+  cursor: default; }
+
+.home hr {
+  width: 6rem;
+  height: 1px;
+  background-color: #000000;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8) url("../saravilla/img/09b24e31234507.564a1d23c07b4.gif") 50% 50% no-repeat;
+  background-size: 2.5%; }
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+  overflow: hidden; }
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+  display: block; }
+
+.tool-tip {
+  text-decoration: none; }
+  .tool-tip:hover {
+    position: relative; }
+    .tool-tip:hover span {
+      padding: 5px 20px 5px 5px;
+      display: block;
+      z-index: 100;
+      background: #f5f5f5 no-repeat 100% 5%;
+      left: 0px;
+      margin: 10px;
+      width: max-content;
+      position: absolute;
+      top: 10px;
+      text-decoration: none;
+      font-size: 1.25rem; }
+  .tool-tip span {
+    display: none; }
+
+.header {
+  height: 698px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: auto, auto, cover !important;
+  background-position: center 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 2px 1px black; }
+  @media only screen and (max-width: 778px) {
+    .header {
+      background-position: 25% 0; } }
+  @media only screen and (max-width: 600px) {
+    .header {
+      background-size: auto, 1500px, cover !important;
+      height: 320px;
+      background-attachment: local;
+      background-position: 25% 40%; } }
+  .header p {
+    font-size: 24px;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 60px; }
+    @media only screen and (max-width: 600px) {
+      .header p {
+        font-size: 15px; } }
+  .header h1 {
+    color: #ffffff;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 10rem;
+    line-height: 0; }
+    @media only screen and (min-width: 768px) {
+      .header h1 {
+        font-size: 45px;
+        line-height: 50px;
+        padding-top: 20rem; } }
+
+.about {
+  margin-bottom: 1rem; }
+  .about .about-text {
+    padding-left: 5rem;
+    padding-right: 5rem; }
+
+.about-picture {
+  background-image: url("../seaways/img/about-pic.jpg");
+  height: 320px;
+  background-size: cover !important;
+  background-position: center center !important; }
+  @media only screen and (min-width: 600px) {
+    .about-picture {
+      height: 600px; } }
+
+.amenities {
+  padding-bottom: 2rem; }
+
+.contact-photo {
+  background-image: url("../seaways/img/contact-pic.jpg");
+  height: 780px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important; }
+  @media only screen and (max-width: 600px) {
+    .contact-photo {
+      background-image: url("../seaways/img/contact-mobile.jpg"); } }
+
+#contact h2 {
+  padding-top: 0; }
+
+.room-pic img {
+  height: 10rem;
+  width: 242px; }
+
+.page-template-page-rooms .col-md-2 {
+  padding-bottom: 1rem; }
+
+.page-template-page-room .book-btn {
+  padding-top: 1rem; }
+
+.page-template-page-room .form-section {
+  padding-top: 1rem; }
+
+.page-template-page-room .room-title {
+  padding: 1rem; }
+  .page-template-page-room .room-title h3 {
+    margin: 0; }
+
+.page-template-page-room .back-icon {
+  padding-top: 3px; }

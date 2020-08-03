@@ -1,0 +1,27 @@
+/*!
+Theme Name: Seaways
+URI: https://
+Author: Chris Vasquez
+Author URI: chrisvasquez.dev
+Description: The theme for Seaways
+Version: 1.0
+License: GNU License 
+URI: 
+Text Domain: Seaways
+Tags: 
+*/
+
+@import 'abstracts/mixins', 'abstracts/variables';
+
+@import 'venders/hamburgers';
+
+@import 'base/base', 'base/fonts', 'base/typography';
+
+@import 'layout/footer', 'layout/header';
+
+@import 'components/buttons', 'components/cards', 'components/carousel',
+  'components/nav', 'components/contact-form', 'components/cookie-notice',
+  'components/gallery', 'components/horizontal-line', 'components/loader-modal',
+  'components/tool-tip';
+
+@import 'pages/home', 'pages/rooms', 'pages/room';

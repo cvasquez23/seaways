@@ -1,0 +1,42 @@
+@mixin for-xl-only {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-lg-up {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin for-md-up {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-sm-up {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin room-card($imageURL) {
+  background-image: $imageURL;
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  height: 10rem;
+}
+
+@mixin room-card-2($imageURL) {
+  background-image: $imageURL;
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  height: 10rem;
+}
+
+@mixin room-gallery($imageURL) {
+  background-image: $imageURL;
+  height: 650px;
+}

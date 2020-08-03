@@ -1,0 +1,28 @@
+.btn,
+.btn-primary,
+.btn-secondary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &:not(:disabled),
+  &:not(:disabled):active {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,25 @@
+.tool-tip {
+  text-decoration: none;
+
+  &:hover {
+    position: relative;
+
+    span {
+      padding: 5px 20px 5px 5px;
+      display: block;
+      z-index: 100;
+      background: $offwhite no-repeat 100% 5%;
+      left: 0px;
+      margin: 10px;
+      width: max-content;
+      position: absolute;
+      top: 10px;
+      text-decoration: none;
+      font-size: 1.25rem;
+    }
+  }
+
+  span {
+    display: none;
+  }
+}

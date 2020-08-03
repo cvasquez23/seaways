@@ -1,0 +1,119 @@
+body,
+html {
+  font-family: $body-font;
+  font-size: 0.9rem;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $header-font;
+  }
+
+  span {
+    font-family: $body-font;
+  }
+
+  @include for-xl-only {
+    font-size: 1rem;
+  }
+}
+
+//Header
+.top-alert {
+  a {
+    color: $white;
+  }
+}
+
+.cn-more-info {
+  font-weight: 700;
+  font-family: $body-font;
+  font-size: 0.9rem;
+}
+
+//Home Page
+.home {
+  p.lead {
+    font-style: italic;
+  }
+
+  .card {
+    span {
+      font-weight: 700;
+    }
+
+    i {
+      font-size: 3rem;
+    }
+  }
+
+  .about {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .book-now {
+    color: $primary;
+  }
+}
+
+// Rooms Page
+.page-template-page-rooms {
+  a {
+    text-decoration: none;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .contact-email {
+    color: $primary;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .book-now {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+// Room Page
+.page-template-page-room {
+  .room-title {
+    i {
+      font-size: 1.75rem;
+    }
+  }
+  a.back-icon {
+    color: $black;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  span.policies {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  span.divider {
+    font-size: 2rem;
+  }
+}
