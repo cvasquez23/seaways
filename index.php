@@ -1,9 +1,9 @@
 <?php
 /**
- * The index for Giem Photography Theme
+ * The index for Seaways Theme
  *
- * @package Giem Photography
- * @since Giem Photography Theme 1.0.0
+ * @package Seaways
+ * @since Seaways Theme 1.0.0
  */
 ?>
 
