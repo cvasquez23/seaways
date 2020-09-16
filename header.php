@@ -48,16 +48,19 @@
             echo bloginfo('name');
           } ?>
         </a>
-        <div class="social-media d-lg-none">
 
-        </div>
+        <!-- Social Media Area Optional -->
+        <!-- <div class="social-media d-lg-none">
+
+        </div> -->
+
         <button class="hamburger hamburger--collapse d-lg-none" type="button" data-toggle="slide-collapse" data-target="#slidingNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
 
-        <?php if (is_page($page = '2')) { ?>
+        <?php if (is_page($page = '8')) { ?>
           <div class="collapse navbar-collapse justify-content-center" id="slidingNav">
             <?php wp_nav_menu(array(
               'theme_location' => 'primary',

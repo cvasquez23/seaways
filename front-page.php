@@ -9,14 +9,16 @@
 
 <?php get_header(); ?>
 
-    <!-- Header -->
-    <div id="home" class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url('<?php header_image(); ?>')">
+    <!-- Hero Image -->
+    <section id="home" class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55)), url('<?php header_image(); ?>')">
       <div class="display-3">
         <h1> <?php bloginfo('name'); ?> </h1>
         <p class="lead"> <?php bloginfo('description'); ?> </p>
       </div>
-    </div>
-    <div id="about" class="row about">
+    </section>
+
+    <!-- About Area -->
+    <section id="about" class="row about">
       <div class="col-lg-6 about-picture d-none d-lg-block"></div>
       <div class="col-lg-6 my-0 about-text text-center">
         <h2>Welcome to <?php bloginfo('name'); ?></h2>
@@ -30,9 +32,10 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="amenities" class="container amenities text-center">
+    <!-- Amenities Area -->
+    <section id="amenities" class="container amenities text-center">
       <h2>Amenities</h2>
       <hr />
       <div class="row justify-content-between justify-content-center">
@@ -115,14 +118,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="gallery" class="gallery"><?php echo do_shortcode(
-      '[modula id="31"]'
+    <!-- Gallery Area -->
+    <section id="gallery" class="gallery"><?php echo do_shortcode(
+      '[modula id="26"]'
     ); ?>
-    </div>
+    </section>
 
-    <div id="to-do" class="container amenities text-center">
+    <!-- Around Town Area -->
+    <section id="to-do" class="container amenities text-center">
       <h2>Around Town</h2>
       <hr />
       <div class="row justify-content-between">
@@ -205,9 +210,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="contact" class="row">
+    <!-- Contact Area -->
+    <section id="contact" class="row">
       <div class="col-lg-6 form-section text-center">
         <h2>Contact Us</h2>
 
@@ -226,14 +232,12 @@
         ); ?>
       </div>
       <div class="col-lg-6 contact-photo"></div>
-    </div>
+    </section>
+
+    <!-- Map Area -->
     <?php echo do_shortcode('[wpgmza id="1"]'); ?>
 
-    <?php while (have_posts()):
-      the_post(); ?>          
-          <?php the_content(); ?>
-    <?php
-    endwhile; ?>
-    </div>
+    <!-- Maybe a boog? -->
+    <!-- </div> -->
 
 <?php get_footer(); ?>
